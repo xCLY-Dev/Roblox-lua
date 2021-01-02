@@ -2,12 +2,7 @@
 -- ## Made by : xCLY#7905 ## --
 -- ## I give the source file to the proven developers ## --
 
-Tracers = false -- kendine göre ayarla mq
-Boxes = false-- kendine göre ayarla mq
-CheckTeams = false-- kendine göre ayarla mq
 
-TracerColor = Color3.fromRGB(255, 255, 255)-- kendine göre ayarla mq
-BoxesColor = Color3.fromRGB(255, 255, 255)-- kendine göre ayarla mq
 
 function ____________(_____________)
 	local ______________ = ''
