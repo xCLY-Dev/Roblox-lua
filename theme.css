@@ -1,14 +1,14 @@
 :root {
-  --accent-color: #1db954;
-  --accent-hover: #1ed760;
+   --accent-color: #0c0c0c;
+  --accent-hover: #0c0c0c;
   --accent-rgb: 29,185,84;
   --alt-accent: #5680d4;
   --alert-color: #f04747;
   --alert-hover: #ff4c4c;
   --chat-color: #181818;
-  --chat-box-color: #272727;
+  --chat-box-color: #111111;
   --side-color: #121212;
-  --bar-color: #282828;
+  --bar-color: #121212;
   /*--button-background: #1a1a1a;*/
   --button-background: rgba(0,0,0,0.2);
   --button-border: 1px solid #b2b2b2;
