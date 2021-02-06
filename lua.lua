@@ -98,6 +98,6 @@ local function IBXS_fake_script() -- Frame.LocalScript
 	script.Parent.Parent.Parent.emcan:TweenSize(UDim2.new(0,0,0,0),"Out","Sine",wd)
 	wait(1)
 	script.Parent.Parent.Parent.Parent.Loader31sj:Destroy()
-	
+	wait(10)
 end
 coroutine.wrap(IBXS_fake_script)()
