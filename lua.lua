@@ -19,7 +19,7 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.ClipsDescendants = true
-Frame.Position = UDim2.new(0.344554454, 0, 0.413087904, 0)
+Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 Frame.Size = UDim2.new(0, 315, 0, 85)
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 
