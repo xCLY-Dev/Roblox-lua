@@ -21,6 +21,7 @@ Frame.BackgroundTransparency = 1.000
 Frame.ClipsDescendants = true
 Frame.Position = UDim2.new(0.344554454, 0, 0.413087904, 0)
 Frame.Size = UDim2.new(0, 315, 0, 85)
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 
 Frame_2.Parent = Frame
 Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
