@@ -1,8 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
+getgenv().Drawing = false
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
@@ -56,7 +52,7 @@ TextLabel.Position = UDim2.new(0.312825739, 0, 0.447257787, 2)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.GothamSemibold
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 28.000
+TextLabel.TextSize = 22.000
 TextLabel.TextTransparency = 1.000
 
 -- Scripts:
@@ -68,7 +64,7 @@ local function CXEQQHC_fake_script() -- ImageLabel.LocalScript
 	local ts = game:GetService("TweenService")
 	
 	local goal = {}
-	wait(1)
+	wait(.5)
 	local tween = gui:TweenSize(UDim2.new(0, 534,0, 507), Enum.EasingDirection.In,Enum.EasingStyle.Sine,0.5,true)
 	
 		--{0, 25},{0, 23}
@@ -108,7 +104,7 @@ local function SEQCF_fake_script() -- Frame_3.LocalScript
 	if a == true then 
 		a = false
 		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,200,0,2),"Out","Sine",0.5) 
-		textt("Checking Host")
+		textt("Checking libraries")
 		a = true
 	end
 	wait(1)
@@ -147,43 +143,15 @@ end
 coroutine.wrap(SEQCF_fake_script)()
 local function CZLQQ_fake_script() -- Frame_3.Rainbower 
 	local script = Instance.new('LocalScript', Frame_3)
-
-	while wait() do
-		script.Parent.BackgroundColor3 = Color3.new(1,0,0)
-		for i=1,15 do
-			game:GetService("RunService").RenderStepped:wait()
-			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g+(17/255),script.Parent.BackgroundColor3.b)
-		end
-		for i=1,15 do
-			game:GetService("RunService").RenderStepped:wait()
-			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
-		end
-		for i=1,15 do
-			game:GetService("RunService").RenderStepped:wait()
-			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
-		end
-		for i=1,15 do
-			game:GetService("RunService").RenderStepped:wait()
-			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-(17/255),script.Parent.BackgroundColor3.b)
-		end
-		for i=1,15 do
-			game:GetService("RunService").RenderStepped:wait()
-			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r+(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
-		end
-		for i=1,15 do
-			game:GetService("RunService").RenderStepped:wait()
-			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
-		end
-	end
 end
+
 coroutine.wrap(CZLQQ_fake_script)()
 local function OXKSUXJ_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local gui = script.Parent
-	wait(3)
-	
-	for i = 1,100 do
+	wait(2)
+	for i = 1,50 do
 		script.Parent.TextTransparency = script.Parent.TextTransparency - 0.05
 		wait()
 	end
