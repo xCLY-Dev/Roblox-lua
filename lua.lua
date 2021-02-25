@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
@@ -8,15 +13,12 @@ local TextLabel = Instance.new("TextLabel")
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.ClipsDescendants = true
-Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame.Position = UDim2.new(0.344554454, 0, 0.413087904, 0)
 Frame.Size = UDim2.new(0, 315, 0, 85)
-Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 
 Frame_2.Parent = Frame
 Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -56,7 +58,7 @@ TextLabel.TextTransparency = 1.000
 
 -- Scripts:
 
-local function CXEQQHC_fake_script() -- ImageLabel.LocalScript 
+local function OMLAMBG_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local gui = script.Parent
@@ -68,8 +70,8 @@ local function CXEQQHC_fake_script() -- ImageLabel.LocalScript
 	
 		--{0, 25},{0, 23}
 end
-coroutine.wrap(CXEQQHC_fake_script)()
-local function SEQCF_fake_script() -- Frame_3.LocalScript 
+coroutine.wrap(OMLAMBG_fake_script)()
+local function LFSTRR_fake_script() -- Frame_3.LocalScript 
 	local script = Instance.new('LocalScript', Frame_3)
 
 	local ld = 0.01
@@ -96,14 +98,14 @@ local function SEQCF_fake_script() -- Frame_3.LocalScript
 	if a == true then 
 		a = false
 		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,102,0,2),"Out","Sine",0.5) 
-		textt("Checking Game")
+		textt("Checking libraries")
 		a = true
 	end
 	w(1)
 	if a == true then 
 		a = false
 		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,200,0,2),"Out","Sine",0.5) 
-		textt("Checking libraries")
+		textt("Checking Host")
 		a = true
 	end
 	wait(1)
@@ -139,24 +141,20 @@ local function SEQCF_fake_script() -- Frame_3.LocalScript
 	
 	--{0, 65},{0, 0}]]
 end
-coroutine.wrap(SEQCF_fake_script)()
-local function CZLQQ_fake_script() -- Frame_3.Rainbower 
-	local script = Instance.new('LocalScript', Frame_3)
-end
-
-coroutine.wrap(CZLQQ_fake_script)()
-local function OXKSUXJ_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(LFSTRR_fake_script)()
+local function ECUCWV_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local gui = script.Parent
 	wait(2)
-	for i = 1,50 do
+	
+	for i = 1,100 do
 		script.Parent.TextTransparency = script.Parent.TextTransparency - 0.05
 		wait()
 	end
 end
-coroutine.wrap(OXKSUXJ_fake_script)()
-local function KHEGNEV_fake_script() -- Frame_2.LocalScript 
+coroutine.wrap(ECUCWV_fake_script)()
+local function DHJBFL_fake_script() -- Frame_2.LocalScript 
 	local script = Instance.new('LocalScript', Frame_2)
 
 	local gui = script.Parent
@@ -167,4 +165,4 @@ local function KHEGNEV_fake_script() -- Frame_2.LocalScript
 	wait(1)
 	script.Parent.Parent.Parent.Parent.ScreenGui:Destroy()
 end
-coroutine.wrap(KHEGNEV_fake_script)()
+coroutine.wrap(DHJBFL_fake_script)()
