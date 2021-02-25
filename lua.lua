@@ -1,4 +1,3 @@
-getgenv().Drawing = false
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
