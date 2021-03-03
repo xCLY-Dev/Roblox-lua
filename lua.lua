@@ -1,7 +1,14 @@
--- Gui to Lua
--- Version: 3.2
+local a = game:GetService("Players").LocalPlayer
 
--- Instances:
+function Getmetatable()
+   Get_metatable = getrawmetatable or debug.getmetatable or a:Kick("Your exploit isn\'t compatible your missing , [Get_metatable]");
+       print("Getmetatable : true")
+end
+
+function Drawingg()
+   New = Drawing.new or a:Kick("Your exploit isn\'t compatible your missing , Hook [hookfunction]");
+   print("Drawing : true")
+end
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -10,14 +17,14 @@ local ImageLabel = Instance.new("ImageLabel")
 local Frame_3 = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 
---Properties:
-
 ScreenGui.Parent = game.CoreGui
+
 Frame.Parent = ScreenGui
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.ClipsDescendants = true
-Frame.Position = UDim2.new(0.344554454, 0, 0.413087904, 0)
+Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 Frame.Size = UDim2.new(0, 315, 0, 85)
 
 Frame_2.Parent = Frame
@@ -51,27 +58,27 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.LayoutOrder = -3
 TextLabel.Position = UDim2.new(0.312825739, 0, 0.447257787, 2)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Font = Enum.Font.Gotham
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 22.000
+TextLabel.TextSize = 20.000
 TextLabel.TextTransparency = 1.000
 
 -- Scripts:
 
-local function OMLAMBG_fake_script() -- ImageLabel.LocalScript 
+local function DIIPG_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local gui = script.Parent
 	local ts = game:GetService("TweenService")
 	
 	local goal = {}
-	wait(.5)
+	wait(1)
 	local tween = gui:TweenSize(UDim2.new(0, 534,0, 507), Enum.EasingDirection.In,Enum.EasingStyle.Sine,0.5,true)
 	
 		--{0, 25},{0, 23}
 end
-coroutine.wrap(OMLAMBG_fake_script)()
-local function LFSTRR_fake_script() -- Frame_3.LocalScript 
+coroutine.wrap(DIIPG_fake_script)()
+local function WJTK_fake_script() -- Frame_3.LocalScript 
 	local script = Instance.new('LocalScript', Frame_3)
 
 	local ld = 0.01
@@ -92,37 +99,47 @@ local function LFSTRR_fake_script() -- Frame_3.LocalScript
 	wait(3)
 	script.Parent.Visible = true
 	script.Parent.Parent.Frame:TweenSize(UDim2.new(0,59,0,2),"Out","Sine",0.5)
-	textt("Loading")
+	textt("Loading...")
 	a = true
 	wait(1)
 	if a == true then 
 		a = false
-		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,102,0,2),"Out","Sine",0.5) 
-		textt("Checking libraries")
+		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,102,0,2),"Out","Sine",0.2) 
+		textt("Checking game...")
 		a = true
 	end
 	w(1)
 	if a == true then 
 		a = false
-		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,200,0,2),"Out","Sine",0.5) 
-		textt("Checking Host")
+		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,150,0,2),"Out","Sine",0.2) 
+		textt("Getting data...")
+		w(1)
 		a = true
 	end
 	wait(1)
 	if a == true then 
 		a = false
-		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,250,0,2),"Out","Sine",0.5) 
-		textt("Executing Script")
+		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,200,0,2),"Out","Sine",0.2) 
+		textt("Checking librarys..")
+		Drawingg()
+		Getmetatable()
 		a = true
 	end
 	wait(1)
 	if a == true then 
 		a = false
-		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,300,0,2),"Out","Sine",0.5) 
-		textt("Enjoy :)")
+		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,250,0,2),"Out","Sine",0.2) 
+		textt("Getting ready..")
 		a = true
 	end
 	wait(1)
+	if a == true then 
+		a = false
+		script.Parent.Parent.Frame:TweenSize(UDim2.new(0,300,0,2),"Out","Sine",0.2) 
+		textt("Enjoy!")
+		a = true
+		wait(2)
+	end
 	--[[
 	script.Parent.Parent.Parent.emcan:TweenSize(UDim2.new(0,348,0,100),"Out","Sine",wd)
 	w(1)
@@ -141,28 +158,28 @@ local function LFSTRR_fake_script() -- Frame_3.LocalScript
 	
 	--{0, 65},{0, 0}]]
 end
-coroutine.wrap(LFSTRR_fake_script)()
-local function ECUCWV_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(WJTK_fake_script)()
+local function FGTUCAY_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local gui = script.Parent
-	wait(2)
+	wait(3)
 	
 	for i = 1,100 do
 		script.Parent.TextTransparency = script.Parent.TextTransparency - 0.05
 		wait()
 	end
 end
-coroutine.wrap(ECUCWV_fake_script)()
-local function DHJBFL_fake_script() -- Frame_2.LocalScript 
+coroutine.wrap(FGTUCAY_fake_script)()
+local function WECK_fake_script() -- Frame_2.LocalScript 
 	local script = Instance.new('LocalScript', Frame_2)
 
 	local gui = script.Parent
 	wait(.1)
 	local tween = gui:TweenSize(UDim2.new(0, 329,0, 100), Enum.EasingDirection.In,Enum.EasingStyle.Sine,0.5,true)
-	wait(9)
-	local tween = gui:TweenSize(UDim2.new(0, 10,0, 2), Enum.EasingDirection.In,Enum.EasingStyle.Sine,0.5,true)
+	wait(11)
+	local tween = gui:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.In,Enum.EasingStyle.Sine,0.5,true)
 	wait(1)
 	script.Parent.Parent.Parent.Parent.ScreenGui:Destroy()
 end
-coroutine.wrap(DHJBFL_fake_script)()
+coroutine.wrap(WECK_fake_script)()
