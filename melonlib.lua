@@ -45,8 +45,6 @@ if not CursorSuccess or not PickerSuccess or not HueSuccess then
 	error("Failed, Check The Links For the Assets")
 end
 
-local color = 255,255,255
-
 local Library = {}
 local Defaults = {
 	MainOutlineColor = Color3_fromRGB(252, 186, 3),
@@ -224,7 +222,7 @@ function Library:CreateWindow(Title, X, Y, TitleHeight)
 		Window.TitleBar.Visible = not Window.TitleBar.Visible
 		Window.Title.Visible = not Window.Title.Visible
 		Window.MainFrame.Visible = not Window.MainFrame.Visible
-		Window.Mouse.Visible = not Window.Mouse.Visible
+		Window.Mouse.Visible = true
 		Window.BeingDragged = false
 		for i, t in next, Window.Categories do
 			t.Toggle.Hitbox.Visible = Window.MainOutline.Visible
